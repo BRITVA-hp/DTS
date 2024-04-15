@@ -1,0 +1,95 @@
+
+@import "1440"
+
+@media screen and (max-width: 1200px)
+  .team
+    &__row
+      justify-content: center
+      max-width: 786px
+      margin: auto
+
+@import "1024"
+
+@import "991"
+
+@media screen and (max-width: 767px)
+  .container
+    max-width: 600px
+    //settings
+
+  .footer
+    text-align: center
+    &__block
+      &--2
+        flex-direction: column
+    &__box
+      &__row
+        flex-direction: column
+        align-items: center
+    &__logo
+      justify-content: center
+    &__row
+      display: flex
+      flex-direction: column
+      align-items: center
+
+  .team
+    &__row
+      max-width: 316px
+
+  .clients
+    &__row
+      flex-direction: column
+
+  .we
+    &__box
+      max-width: none
+    &__row
+      flex-direction: column
+      align-items: center
+    &__img
+      img
+        max-width: 100%
+
+  .safe
+    &__row
+      grid-template: 1fr 1fr 1fr / 1fr 1fr
+
+  .warranty
+    &__buttons
+      flex-wrap: wrap
+    &__content
+      flex-direction: column
+      align-items: center
+
+  .info
+    &__row
+      grid-template-columns: 1fr
+
+  .header
+    &__block
+      order: 3
+      width: 100%
+
+@media screen and (max-width: 575px)
+  .container
+    max-width: 400px
+  //settings
+
+  .safe
+    &__row
+      display: flex
+      flex-direction: column
+    &__card
+      min-width: 170px
+
+  .warranty
+    &__buttons
+      flex-direction: column
+      align-items: flex-start
+    &__ul
+      display: flex
+      flex-direction: column
+
+  .info
+    padding: 60px 10px

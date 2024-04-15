@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>ДТС-Логистик | Искусство надёжных перевозок</title>
+
+  <script src="https://api-maps.yandex.ru/v3/?apikey=f3dd7cb0-4eed-430f-9541-ca88e80cf962&lang=ru_RU"></script>
+
+</head>
+<body>
+
+  <header class="header section">
+    <div class="container header__container">
+      <div class="header__row">
+
+        <div class="header__box">
+          <div class="header__logo img-box">
+            <img src="img/logo.svg" alt="DTS">
+          </div>
+          <p class="header__text">Добро пожаловать в мир транспортной логистики с надежным партнером в организации перевозок</p>
+        </div>
+
+        <nav class="header__nav">
+          <a href="#" class="header__link">Главная</a>
+          <a href="#warranty" class="header__link">Услуги</a>
+          <a href="#safe" class="header__link">Преимущества</a>
+          <a href="#we" class="header__link">О нас</a>
+          <a href="#clients" class="header__link">Клиенты</a>
+          <a href="#map" class="header__link">Контакты</a>
+        </nav>
+
+        <div class="header__block">
+
+          <div class="header__icons">
+            <a href="#" class="header__icon img-box">
+              <img src="img/whatsapp.svg" alt="WhatsApp">
+            </a>
+            <a href="#" class="header__icon img-box">
+              <img src="img/telegram.svg" alt="telegram">
+            </a>
+          </div>
+
+          <div class="header__block__box">
+            <a href="tel:+ 7 (804) 700-79-99" class="header__tel">+ 7 (804) 700-79-99</a>
+            <p class="header__block__text">Круглосуточно 24/7</p>
+          </div>
+        </div>
+
+        <div class="header__burger">
+          <div class="header__burger__line"></div>
+          <div class="header__burger__line"></div>
+          <div class="header__burger__line"></div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+  <!-- /.header section -->
+
+  <main>
+
+    <section class="section main">
+      <div class="container main__container">
+        <div class="main__box">
+          <h2 class="main__subtitle">ДТС-Логистик</h2>
+          <h1 class="main__title">Искусство <br> надёжных <br> перевозок</h1>
+          <button data-modal class="button main__button">Оставить заявку <br> на расчёт стоимости</button>
+        </div>
+      </div>
+    </section>
+    <!-- /.section main -->
+
+    <section class="section info">
+      <div class="container info__container">
+        <h3 class="section__title info__title">Перевозим грузы автомобильным транспортом <span>по всей России</span></h3>
+        <div class="info__row">
+
+          <div class="info__card">
+            <div class="info__card__icon img-box">
+              <img src="img/info/icon1.svg" alt="information">
+            </div>
+            <div class="info__card__box">
+              <p class="info__card__title">Более 100 единиц техники, не старше 6 лет</p>
+              <p class="info__card__text">Собственный автопарк с 40 единицами техники и ещё 100 ед. привлечённого транспорта партнёров под нашей ответственностью</p>
+            </div>
+          </div>
+
+          <div class="info__card">
+            <div class="info__card__icon img-box">
+              <img src="img/info/icon2.svg" alt="information">
+            </div>
+            <div class="info__card__box">
+              <p class="info__card__title">Круглосуточный сервис <br> заботы о клиентах</p>
+              <p class="info__card__text">Оперативно ответим, решим любые вопросы и предоставим гибкие условия под ваш запрос</p>
+            </div>
+          </div>
+
+          <div class="info__card">
+            <div class="info__card__icon img-box">
+              <img src="img/info/icon3.svg" alt="information">
+            </div>
+            <div class="info__card__box">
+              <p class="info__card__title">Современные <br> системы мониторинга</p>
+              <p class="info__card__text">Ваш персональный менеджер следит за местоположением объекта с грузом и температурным режимом, а также несёт ответственность за сохранность груза</p>
+            </div>
+          </div>
+
+          <div class="info__card">
+            <div class="info__card__icon img-box">
+              <img src="img/info/icon4.svg" alt="information">
+            </div>
+            <div class="info__card__box">
+              <p class="info__card__title">Защита груза <br> от всех рисков</p>
+              <p class="info__card__text">Полностью или частично застрахуем груз от повреждения, мошенничества, утраты груза и др.</p>
+              <p class="info__card__button">Заказать расчет страховки</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- /.section info -->
+
+    <section id="warranty" class="section warranty">
+      <div class="container warranty__container">
+        <h3 class="warranty__title section__title"><span>Гарантируем</span> надёжный сервис <br> и своевременную доставку ваших грузов</h3>
+        <div class="warranty__buttons">
+          <div class="warranty__button warranty__button--active">Бизнес компаниям</div>
+          <div class="warranty__button">Экспедиторам</div>
+          <div class="warranty__button">Интернет-магазинам</div>
+        </div>
+        <div class="warranty__content warranty__content--active">
+          <picture class="warranty__img">
+            <source media="(max-width: 991px)" srcset="img/warranty/img1M.png">
+            <img src="img/warranty/img1.png" alt="warranty">
+          </picture>
+          <ul class="warranty__ul">
+            <li class="warranty__li">
+              <img src="img/marker.png" alt="marker">
+              <span>Приоритетное обслуживание</span>
+            </li>
+            <li class="warranty__li">
+              <img src="img/marker.png" alt="marker">
+              <span>Работаем по удобному для вас графику</span>
+            </li>
+            <li class="warranty__li">
+              <img src="img/marker.png" alt="marker">
+              <span>Тщательно прорабатываем маршруты, чтобы своевременно доставить груз</span>
+            </li>
+            <li class="warranty__li">
+              <img src="img/marker.png" alt="marker">
+              <span>Электронный документооборот</span>
+            </li>
+            <li class="warranty__li">
+              <img src="img/marker.png" alt="marker">
+              <span>Персональный менеджер оперативно информирует о важных изменениях, при перевозке</span>
+            </li>
+          </ul>
+        </div>
+        <div class="warranty__content">
+          <picture class="warranty__img">
+            <source media="(max-width: 991px)" srcset="img/warranty/img2M.png">
+            <img src="img/warranty/img2.png" alt="warranty">
+          </picture>
+          <ul class="warranty__ul">
+            <li class="warranty__li">
+              <img src="img/marker.png" alt="marker">
+              <span>Подбираем наилучшее транспортное решение</span>
+            </li>
+            <li class="warranty__li">
+              <img src="img/marker.png" alt="marker">
+              <span>Электронный документооборот</span>
+            </li>
+          </ul>
+        </div>
+        <div class="warranty__content">
+          <picture class="warranty__img">
+            <source media="(max-width: 991px)" srcset="img/warranty/img3M.png">
+            <img src="img/warranty/img3.png" alt="warranty">
+          </picture>
+          <ul class="warranty__ul">
+            <li class="warranty__li">
+              <img src="img/marker.png" alt="marker">
+              <span>Электронный документооборот</span>
+            </li>
+            <li class="warranty__li">
+              <img src="img/marker.png" alt="marker">
+              <span>Оперативная доставка грузов по всей стране с гарантией сохранности грузов</span>
+            </li>
+            <li class="warranty__li">
+              <img src="img/marker.png" alt="marker">
+              <span>Разработка экономически выгодных маршрутов</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- /.section warranty -->
+
+    <section id="safe" class="section safe">
+      <div class="container safe__container">
+        <h3 class="section__title safe__title">Доставим ваш <span>груз в полной сохранности,</span> включая особенные: продукты питания <br> и хрупкие грузы</h3>
+        <div class="safe__row">
+
+          <div class="safe__card">
+            <div class="safe__card__img">
+              <img src="img/safe/icon1.svg" alt="safe">
+            </div>
+            <p class="safe__card__text">Надёжны в деле, соблюдаем договоренности</p>
+          </div>
+
+          <div class="safe__card">
+            <div class="safe__card__img">
+              <img src="img/safe/icon2.svg" alt="safe">
+            </div>
+            <p class="safe__card__text">Идеальное соотношение цены и качества</p>
+          </div>
+
+          <div class="safe__card">
+            <div class="safe__card__img">
+              <img src="img/safe/icon3.svg" alt="safe">
+            </div>
+            <p class="safe__card__text">Высокий уровень сервиса, комфорта и безопасности</p>
+          </div>
+
+          <div class="safe__card">
+            <div class="safe__card__img">
+              <img src="img/safe/icon4.svg" alt="safe">
+            </div>
+            <p class="safe__card__text">Информируем вас о местонахождении груза</p>
+          </div>
+
+          <div class="safe__card">
+            <div class="safe__card__img">
+              <img src="img/safe/icon5.svg" alt="safe">
+            </div>
+            <p class="safe__card__text">Удобные условия электронного документооборота</p>
+          </div>
+
+          <div class="safe__card">
+            <div class="safe__card__img">
+              <img src="img/safe/icon6.svg" alt="safe">
+            </div>
+            <p class="safe__card__text">Нацелены на долгосрочные отношения и делаем всё для этого</p>
+          </div>
+
+        </div>
+
+        <button data-modal class="button safe__button">Узнать стоимость перевозки</button>
+
+      </div>
+    </section>
+    <!-- /.section safe -->
+
+    <section id="we" class="section we">
+      <div class="container we__container">
+        <h3 class="section__title we__title">Компания ДТС-ЛОГИСТИК устанавливает партнёрские долгосрочные отношения</h3>
+        <div class="we__row">
+
+          <div class="we__box">
+            <p class="we__header">За 7 лет мы получили значительный опыт и работаем с компаниями федерального уровня:</p>
+            <ul class="we__ul">
+              <li class="we__li">
+                <img src="img/marker.png" alt="marker">
+                <span>Более 1500 отгрузок в месяц</span>
+              </li>
+              <li class="we__li">
+                <img src="img/marker.png" alt="marker">
+                <span>Доставляем в любую точку России</span>
+              </li>
+              <li class="we__li">
+                <img src="img/marker.png" alt="marker">
+                <span>Собственный автопарк постоянно пополняется и обновляется, наши машины не старше 6 лет</span>
+              </li>
+              <li class="we__li">
+                <img src="img/marker.png" alt="marker">
+                <span>Неограниченный парк привлечённой автотехники</span>
+              </li>
+              <li class="we__li">
+                <img src="img/marker.png" alt="marker">
+                <span>Команда профессионалов, обеспечивающая спокойствие и уверенность</span>
+              </li>
+              <li class="we__li">
+                <img src="img/marker.png" alt="marker">
+                <span>Открыты к изменениям и поддерживаем их реализацию</span>
+              </li>
+            </ul>
+          </div>
+
+          <picture class="we__img img-box">
+            <source media="(max-width: 991px)" srcset="img/we/imgM.jpg">
+            <img src="img/we/img.jpg" alt="we">
+          </picture>
+
+        </div>
+      </div>
+    </section>
+    <!-- /.section we -->
+
+    <section id="clients" class="section clients">
+      <div class="container clients__container">
+        <h3 class="section__title clients__title"><span>DTS Logistic</span> ценят за результативность, профессионализм и качественное обслуживание</h3>
+        <p class="clients__subtitle">Нас выбирают крупные федеральные компании и небольшие организации</p>
+        <div class="clients__row">
+          <div class="clients__card">
+            <img src="img/clients/logo1.png" alt="client">
+          </div>
+          <div class="clients__card">
+            <img src="img/clients/logo2.png" alt="client">
+          </div>
+          <div class="clients__card">
+            <img src="img/clients/logo3.png" alt="client">
+          </div>
+          <div class="clients__card">
+            <img src="img/clients/logo4.png" alt="client">
+          </div>
+          <div class="clients__card">
+            <img src="img/clients/logo5.png" alt="client">
+          </div>
+          <div class="clients__card">
+            <img src="img/clients/logo6.png" alt="client">
+          </div>
+          <div class="clients__card">
+            <img src="img/clients/logo7.png" alt="client">
+          </div>
+          <div class="clients__card">
+            <img src="img/clients/logo8.png" alt="client">
+          </div>
+          <div class="clients__card">
+            <img src="img/clients/logo9.png" alt="client">
+          </div>
+          <div class="clients__card">
+            <img src="img/clients/logo10.png" alt="client">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.section clients -->
+
+    <section class="section team">
+      <div class="container team__container">
+        <h3 class="section__title team__title">Мы <span>увеличиваем нашу команду</span> и готовы принять на вакантные места профессионалов</h3>
+        <div class="team__row">
+          <div class="team__arrow team__arrow--inactive team__arrow--prev">
+            <img src="img/team/prev.png" alt="previous">
+          </div>
+          <div class="team__window">
+            <div class="team__field">
+
+              <div class="team__card">
+                <div class="team__card__box">
+                  <p class="team__card__title">Главный бухгалтер</p>
+                  <p class="team__card__salary">от 120 000 до 150 000 ₽ до вычета налогов</p>
+                  <p class="team__card__text">Требуемый опыт работы: <br> более 6 лет <br> Полная занятость, <br> полный день</p>
+                </div>
+                <button data-modal class="button team__card__button">Подробное описание</button>
+              </div>
+
+              <div class="team__card">
+                <div class="team__card__box">
+                  <p class="team__card__title">Диспетчер в офис</p>
+                  <p class="team__card__salary">от 120 000 до 150 000 ₽ до вычета налогов</p>
+                  <p class="team__card__text">Требуемый опыт работы: <br> более 6 лет <br> Полная занятость, <br> полный день</p>
+                </div>
+                <button data-modal class="button team__card__button">Подробное описание</button>
+              </div>
+
+              <div class="team__card">
+                <div class="team__card__box">
+                  <p class="team__card__title">Менеджер отдела логистики</p>
+                  <p class="team__card__salary">от 120 000 до 150 000 ₽ до вычета налогов</p>
+                  <p class="team__card__text">Требуемый опыт работы: <br> более 6 лет <br> Полная занятость, <br> полный день</p>
+                </div>
+                <button data-modal class="button team__card__button">Подробное описание</button>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="team__arrow team__arrow--next">
+            <img src="img/team/next.png" alt="next">
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- /.section team -->
+
+    <section class="section map">
+      <div id="map" class="map__map"></div>
+    </section>
+    <!-- /.section map -->
+
+  </main>
+
+  <footer class="footer section">
+    <div class="container footer__container">
+      <div class="footer__row">
+
+        <div class="footer__box">
+          <div class="footer__logo img-box">
+            <img src="img/logoFooter.svg" alt="DTS">
+          </div>
+          <p class="footer__info">Добро пожаловать в мир транспортной логистики с надежным партнером в организации перевозок</p>
+        </div>
+
+        <div class="footer__box">
+          <p class="footer__header">Контакты</p>
+          <p class="footer__contacts">Краснодарский край, г. Краснодар, <br> ул. Путевая, д. 1, пом. 21</p>
+          <a href="tel:+78047007999" class="footer__contacts">+7 (804) 700-79-99</a>
+          <a href="mailto:dts.log@yandex.ru" class="footer__contacts footer__contacts--last">E-mail: dts.log@yandex.ru</a>
+        </div>
+
+        <div class="footer__box footer__box--3">
+          <p class="footer__text"><span>ООО “ДТС – ЛОГИСТИК”</span> <br> – мы нацелены на долгосрочные отношения и ценим каждого партнера!</p>
+          <div class="footer__box__row">
+            <div class="footer__block">
+              <a href="#" class="footer__icon img-box">
+                <img src="img/whatsapp.svg" alt="WhatsApp">
+              </a>
+              <a href="#" class="footer__icon img-box">
+                <img src="img/telegram.svg" alt="telegram">
+              </a>
+            </div>
+            <div class="footer__block footer__block--2">
+              <a href="#" class="footer__icon img-box">
+                <img src="img/mail.png" alt="mail">
+              </a>
+              <a href="#" class="footer__icon img-box">
+                <img src="img/yandex.png" alt="yandex">
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  <!-- /.footer section -->
+
+  <div class="menu">
+    <div class="menu__dialog">
+      <div class="menu__close img-box">
+        <img src="img/close.svg" alt="close">
+      </div>
+      <div class="menu__links">
+        <a href="#" class="menu__link">Главная</a>
+        <a href="#warranty" class="menu__link">Услуги</a>
+        <a href="#safe" class="menu__link">Преимущества</a>
+        <a href="#we" class="menu__link">О нас</a>
+        <a href="#clients" class="menu__link">Клиенты</a>
+        <a href="#map" class="menu__link">Контакты</a>
+      </div>
+
+      <div class="menu__icons">
+        <a href="#" class="menu__icon img-box">
+          <img src="img/whatsapp.svg" alt="WhatsApp">
+        </a>
+        <a href="#" class="menu__icon img-box">
+          <img src="img/telegram.svg" alt="telegram">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal modal-main">
+    <div class="modal__container">
+      <div class="modal__dialog modal-thanks__dialog">
+        <form action="#" id="modal-form" class="modal__content modal-thanks__content">
+          <div class="modal__close modal-main__close img-box">
+            <img src="img/close.svg" alt="close">
+          </div>
+
+          <p class="modal__title">Нужна <span>консультация?</span></p>
+          <p class="modal__text">Оставьте ваш телефон, <br> и мы перезвоним вам</p>
+
+          <div class="input-group modal__input-group">
+            <input id="modal-name" name="modal-name" placeholder="Укажите ваше имя" type="text" class="input modal__input">
+          </div>
+          <div class="input-group modal__input-group modal__input-group--last">
+            <input id="modal-tel" name="modal-tel" placeholder="Номер телефона" type="tel" class="input modal__input">
+          </div>
+
+          <button id="modal-submit" name="modal-submit" class="button modal__button">Отправить данные</button>
+
+          <label class="politics">
+            <input id="modal-politics" name="modal-politics" checked type="checkbox" class="politics__input">
+            <span class="politics__ok"></span>
+            <span class="politics__text">Даю согласие на обработку <a href="#">персональных данных</a></span>
+          </label>
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal modal-thanks">
+    <div class="modal__container">
+      <div class="modal__dialog">
+        <div class="modal__content">
+          <div class="modal__close modal-thanks__close img-box">
+            <img src="img/close.svg" alt="close">
+          </div>
+          <div class="modal-thanks__img img-box">
+            <img src="img/thanks.png" alt="thanks">
+          </div>
+          <p class="modal-thanks__title">Благодарим! <br> <span>Ваш запрос отправлен</span></p>
+          <button class="button modal-thanks__button">Вернуться на страницу</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>
