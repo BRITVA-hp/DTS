@@ -151,6 +151,38 @@ document.addEventListener('DOMContentLoaded', () => {
 
   }
 
+  // оптимизированный ресайз
+  (function () {
+    var throttle = function (type, name, obj) {
+      obj = obj || window;
+      var running = false;
+      var func = function () {
+        if (running) {
+          return;
+        }
+        running = true;
+        requestAnimationFrame(function () {
+          obj.dispatchEvent(new CustomEvent(name));
+          running = false;
+        });
+      };
+      obj.addEventListener(type, func);
+    };
+
+    /* init - you can init any event */
+    throttle("resize", "optimizedResize");
+  })();
+
+  const resizeFunctions = []
+
+// handle event
+  window.addEventListener("optimizedResize", function () {
+    resizeFunctions.forEach(fn => {
+      fn()
+    })
+  })
+
+  // функция для анимации
   function animate({timing, draw, duration, elem, currentPosition, endPosition, inEnd}) {
 
     let start = performance.now();
@@ -174,6 +206,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // Функция расчёта времени
   function linear(timeFraction) {
     return timeFraction;
   }
@@ -239,6 +272,8 @@ document.addEventListener('DOMContentLoaded', () => {
         arr.push(disable)
       }
 
+      resizeFunctions.push(clear)
+
       // считаем расстояние между карточками
       // общая длина всех карточек + расстояния между ними
       const lengthCardAndBetweenCards = cards_[cards_.length - 1].getBoundingClientRect().right - cards_[0].getBoundingClientRect().left;
@@ -255,7 +290,13 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       // проверяем, показывается ли последняя карточка
       function lastCard() {
-        if ( (sliderCounter + numberIntegerVisibleCards()) > (cards_.length) && cards_.length > numberIntegerVisibleCards()) {
+        if (numberIntegerVisibleCards() === cards_.length) {
+          return true
+        }
+        if ( (sliderCounter + numberIntegerVisibleCards()) === cards_.length) {
+          return true
+        }
+        if ( (sliderCounter + numberIntegerVisibleCards()) > cards_.length) {
           sliderCounter = cards_.length - numberIntegerVisibleCards() - 1
           return true
         }
@@ -272,6 +313,26 @@ document.addEventListener('DOMContentLoaded', () => {
       }
 
       field_.style.transition = '0s'
+
+
+      // управление неактивного класса на стрелках
+      function checkButtonActiveClass() {
+        if (arrowNext_) {
+          arrowNext_.classList.remove(settings.buttonActiveClass)
+          if(lastCard()) {
+            arrowNext_.classList.add(settings.buttonActiveClass)
+          }
+        }
+
+        if (arrowPrev_) {
+          arrowPrev_.classList.remove(settings.buttonActiveClass)
+          if(sliderCounter <= 0) arrowPrev_.classList.add(settings.buttonActiveClass)
+        }
+      }
+
+      checkButtonActiveClass()
+
+      resizeFunctions.push(checkButtonActiveClass)
 
       //Общее количество слайдов
       if (progressNumAll) progressNumAll.textContent = cards_.length
